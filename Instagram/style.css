@@ -1,0 +1,397 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+    overflow-x: hidden; /* Evita rolagem horizontal */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Barra do topo */
+.topo-menu {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dbdbdb;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.topo-container {
+    max-width: 935px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box; /* Inclui padding na largura total */
+}
+
+.logo {
+    height: 40px;
+}
+
+.icones-direita {
+    display: flex;
+}
+
+.icones-direita a {
+    color: #262626;
+    font-size: 24px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* Conteúdo principal */
+.conteudo-principal {
+    max-width: 935px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: transparent;
+    padding: 20px;
+    margin-top: 100px;
+    box-sizing: border-box; /* Inclui padding na largura total */
+}
+
+.conteudo-flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    margin-bottom: 40px;
+    box-sizing: border-box; /* Inclui padding na largura total */
+}
+
+/* Stories */
+.stories {
+    flex: 1;
+    display: flex;
+    gap: 15px;
+    justify-content: space-between; /* Alinha os stories */
+    flex-wrap: wrap; /* Permite que eles quebrem a linha em telas menores */
+    overflow-x: hidden; /* Remove a rolagem horizontal */
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+.story img {
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    object-fit: cover;
+}
+
+.story p {
+    font-size: 12px;
+    color: #262626;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 293px;
+    display: block;
+    position: relative;
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+    text-align: left;
+}
+
+.sidebar-top {
+    display: flex;
+    flex-direction: row; /* Flex direction apropriado para itens dispostos em linha */
+    justify-content: left;
+    margin-top: 10px; /* Definir um valor numérico para evitar o erro */
+}
+
+
+.sidebar-top img{
+
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    align-items: right;
+
+}
+
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.perfil p {
+    
+    margin: 0;
+    font-family: 'Roboto';
+    font-size: 14px;
+    text-align: left;
+    color: #262626;
+    margin-left: 15px;   
+    font-weight: 500;
+    width: 182px;
+    height: 34px;
+    }
+
+
+.sidebar-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.sidebar-item img {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+
+.sidebar-item p {
+    font-size: 14px;
+    color: #262626;
+    text-align: left;
+}
+
+.seguir {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #3897f0;
+    cursor: pointer;
+}
+
+.sidebar-info {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #8e8e8e;
+}
+
+.sidebar-info p {
+    margin-bottom: 5px;
+}
+
+.sugestoes{
+    color : #8E8E8E;
+    font-family: Roboto;
+font-size: 12px;
+font-weight: 500;
+line-height: 14.06px;
+text-align: left;
+
+    
+}
+
+/* Publicações */
+.publicacoes-container {
+    width: 614px;
+    height: 717px;
+    position: relative;
+    top: 230px;
+    left: 215px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-radius: 3px 0 0 0;
+    border: 1px solid #dbdbdb; /* Define a borda ao redor da caixa */
+    background-color: #fff; /* Adiciona um fundo branco para o contorno das publicações */
+}
+
+
+
+
+.publicacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    overflow-x: hidden;
+}
+
+.publicacao img {
+    width: 612px;
+    height: 612px;
+    object-fit: cover; /* Ajusta a imagem para cobrir o container */
+    overflow-y: none;
+}
+
+/* Ícones fixos na parte inferior */
+.icones-fixo {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #dbdbdb;
+    justify-content: space-around;
+    padding: 10px 0;
+    z-index: 1000;
+    box-sizing: border-box; /* Inclui padding na largura total */
+}
+
+.icones-fixo a {
+    color: #262626;
+    font-size: 24px;
+}
+
+/* Ícones das informações dos posts */
+.icone-heart-outline,
+.icone-chatbubble-outline,
+.icone-paper-plane-outline,
+.icone-vector {
+    display: inline-block;
+    opacity: 100; /* Inicialmente escondido */
+}
+
+.icone-heart-outline {
+    width: 22px;
+    height: 22px;
+    background: url('path/to/heart-outline-icon.png') no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    top: 913px;
+    left: 230px;
+    padding: 3.44px 2.75px;
+}
+
+.icone-chatbubble-outline {
+    width: 22px;
+    height: 22px;
+    background: url('path/to/chatbubble-outline-icon.png') no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    top: 913px;
+    left: 265px;
+    padding: 2.06px;
+}
+
+.icone-paper-plane-outline {
+    width: 22px;
+    height: 22px;
+    background: url('path/to/paper-plane-outline-icon.png') no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    top: 913px;
+    left: 301px;
+    padding: 2.06px 2.06px 2.07px;
+}
+
+
+
+
+/* Nome à direita da imagem sobreposta */
+.nome-imagem {
+    position: absolute;
+    top: 245px; /* Alinha com a imagem sobreposta */
+    left: 280px; /* Ajuste conforme necessário */
+    font-size: 14px;
+    color: #262626;
+    opacity: 0; /* Inicialmente escondido */
+}
+
+/* Ajustes para mostrar a imagem e o nome */
+.publicacao {
+width: 614px;
+border: 1px 0px 0px 0px;
+overflow-x: hidden;
+max-width: 100%;
+height: auto;
+overflow-x: hidden;
+border: 1px solid #dbdbdb;
+
+}
+.publicacao-icones {
+    display: flex;
+    justify-content: flex-start; /* Garante que os ícones fiquem alinhados à esquerda */
+}
+
+.publicacao-icones .salvar-icon {
+    margin-left: auto; /* Isso move o ícone de "Salvar" para a direita */
+}
+
+.publicacao:hover .imagem-sobreposta,
+.publicacao:hover .nome-imagem {
+    opacity: 1; /* Mostra a imagem e o nome ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 935px) {
+    /* Sidebar some */
+    .sidebar {
+        display: none;
+    }
+
+    /* Ajustar o padding do conteúdo principal */
+    .conteudo-principal {
+        padding: 20px;
+        margin-top: 60px; /* Ajuste para compensar o espaço da sidebar */
+    }
+
+    /* Stories ocupam toda a largura */
+    .stories {
+        flex: 1;
+        justify-content: space-between;
+    }
+
+    /* Centralizar logo */
+    .topo {
+        justify-content: center; /* Centraliza o conteúdo da barra */
+    }
+
+    /* Esconder ícones à direita */
+    .icones-direita {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 614px) {
+    /* Mostrando menos stories */
+    .stories .story:nth-child(n+7) {
+        display: none;
+    }
+
+    /* Ajustar o layout da barra do topo */
+    .topo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Exibir ícones fixos na parte inferior */
+    .icones-fixo {
+        display: flex;
+    }
+
+    /* Ajustes na caixa de posts */
+    .publicacoes-container {
+        width: 100%;
+        height: auto;
+        top: 60px; /* Ajuste conforme necessário */
+        left: 0;
+    }
+
+    /* Remover a sidebar */
+    .sidebar {
+        display: none;
+    }
+
+    /* Ajustar padding do conteúdo principal */
+    .conteudo-principal {
+        padding: 10px;
+    }
+}
